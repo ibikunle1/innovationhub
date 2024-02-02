@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovation Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css"
+        integrity="sha512-d0olNN35C6VLiulAobxYHZiXJmq+vl+BGIgAxQtD5+kqudro/xNMvv2yIHAciGHpExsIbKX3iLg+0B6d0k4+ZA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/dropzone.css"
+        integrity="sha512-7uSoC3grlnRktCWoO4LjHMjotq8gf9XDFQerPuaph+cqR7JC9XKGdvN+UwZMC14aAaBDItdRj3DcSDs4kMWUgg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+        integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/fontawesome.min.js"
+        integrity="sha512-C8qHv0HOaf4yoA7ISuuCTrsPX8qjolYTZyoFRKNA9dFKnxgzIHnYTOJhXQIt6zwpIFzCrRzUBuVgtC4e5K1nhA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/dropzone.js"
+        integrity="sha512-9e9rr82F9BPzG81+6UrwWLFj8ZLf59jnuIA/tIf8dEGoQVu7l5qvr02G/BiAabsFOYrIUTMslVN+iDYuszftVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/ideastyles.css">
+    <style>
+        .btndesign {
+            border-radius: 0 !important;
+            border-top-right-radius: 15px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <!-- Logo section -->
+    <div class="wrapper homewrapper" id="homewrapper">
+        <div class="logo">
+            <img src="/assets/logo.svg" alt="BAT logo">
+        </div>
+        <div class="nav__links">
+            <ul>
+                <li>
+                    <a href="javascript:void(0)" class="viewhero activelink">Home</a>
+                </li>
+                <li>
+                    <a href="#ideaModal" data-bs-toggle="modal">Submit an idea</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="viewIdeas">View ideas</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="viewhowitworks">How it works</a>
+                </li>
+                <li class="lang-sm">
+                    <p style="color: black;">Language</p>
+                </li>
+
+                <div class="close-icon">X</div>
+            </ul>
+        </div>
+        <div class="lang">
+            <p style="color: white;
+            color: white;
+            border: 1px solid #fff;
+            border-radius: 18px;
+            padding: 5px 10px;">Language</p>
+        </div>
+        <div class="menu">
+            <button type="button" class="btn btn-dark"><i class="fa fa-bars pe-2" aria-hidden="true"></i>MENU</button>
+        </div>
+    </div>
+    <!-- Home Page -->
+    <div class="hero" id="hero">
+        <div>
+            <div class="hero__text">
+                <p class="first__text">Welcome to Central Europe's</p>
+                <h1 class="bright_idea">Bright Ideas</h1>
+                <p class="last__text">Share and see the best ideas from sound minds. <br /> Explore how to bring your
+                    idea to life with
+                    step-by-step guidance.</p>
+            </div>
+
+            <div class="explore">
+                <p>Start Exploring</p>
+                <a href="javascript:void(0)" class="viewIdeas">
+                    <img src="/assets/explore.svg" alt="" class="explore__img">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- View Idea Section -->
+    <div class="cat_container d-none" id="categories">
+        <div class="img_wrap">
+            <a href="javascript:void(0)" class="viewhero">
+                <img src="/assets/explore-up.png" alt="" class="explore__img">
+            </a>
+        </div>
+        <h1>Challenge Categories</h1>
+        <div class="container-fluid p-5">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="ce_multi">
+                        <a href="./idea2.html">
+                            <h3>CE MultiCategory</h3>
+                            <article>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus mauris
+                                quis
+                                tellus
+                                ultricies eleifend. Proin quis ante non mi convallis commodo. Vivamus id ex sed urna
+                                porta
+                                egestas.
+                                Ut tempor varius congue. Maecenas posuere nibh at eros gravida vestibulum. Vivamus et
+                                congue
+                                ligula.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus mauris quis
+                                tellus
+                                ultricies eleifend.
+                                Vivamus et congue ligula.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus mauris quis
+                                tellus
+                                ultricies eleifend.
+                            </article>
+                        </a>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#ideaModal"
+                            class="btn btn-light btndesign">Submit
+                            Idea</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="prod ">
+                        <h3>Productivity</h3>
+                        <article>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus mauris quis
+                            tellus
+                            ultricies eleifend. Proin quis ante non mi convallis commodo. Vivamus id ex sed urna porta
+                            egestas.
+                            Ut tempor varius congue. Maecenas posuere nibh at eros gravida vestibulum. Vivamus et congue
+                            ligula.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus mauris quis tellus
+                            ultricies eleifend.
+                            Vivamus et congue ligula.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus mauris quis tellus
+                            ultricies eleifend.
+                        </article>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#ideaModal"
+                            class="btn btn-light btndesign">Submit
+                            Idea</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="o_house">
+                        <h3>Open House</h3>
+                        <article>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus mauris quis
+                            tellus
+                            ultricies eleifend. Proin quis ante non mi convallis commodo. Vivamus id ex sed urna porta
+                            egestas.
+                            Ut tempor varius congue. Maecenas posuere nibh at eros gravida vestibulum. Vivamus et congue
+                            ligula.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus mauris quis tellus
+                            ultricies eleifend.
+                            Vivamus et congue ligula.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus mauris quis tellus
+                            ultricies eleifend.
+                        </article>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#ideaModal"
+                            class="btn btn-light btndesign">Submit
+                            Idea</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- How it works Section -->
+    <div class="howitwork d-none" id="howitwork">
+        <h1>How It Works</h1>
+        <div class="content mt-3">
+            <div class="row" style="height: 100vh;">
+                <div class="col-md-4" style="height: 100%;">
+                    <img class="col-md-12 h-100" src="/assets/howitworks.png">
+                </div>
+                <div class="col-md-8" style="height: 100%;">
+                    <div class="works h-100">
+                        <ul>
+                            <li>Idea Submission</li>
+                            <span>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus mauris quis
+                                tellus
+                                ultricies eleifend. Proin quis ante non mi convallis commodo. Vivamus id ex sed urna
+                                porta
+                                egestas. Ut tempor varius congue. Maecenas posuere nibh at eros gravida vestibulum.
+                                Vivamus
+                                et congue ligula.
+                            </span>
+                            <li>Idea Development</li>
+                            <span>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus mauris quis
+                                tellus
+                                ultricies eleifend. Proin quis ante non mi convallis commodo. Vivamus id ex sed urna
+                                porta
+                                egestas. Ut tempor varius congue. Maecenas posuere nibh at eros gravida vestibulum.
+                                Vivamus
+                                et congue ligula.
+                            </span>
+                            <li>Shark Qualification</li>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus mauris quis
+                                tellus
+                                ultricies eleifend. Proin quis ante non mi convallis commodo. Vivamus id ex sed urna
+                                porta
+                                egestas. Ut tempor varius congue. Maecenas posuere nibh at eros gravida vestibulum.
+                                Vivamus
+                                et congue ligula.</span>
+                            <li>Pitch Deck Prep</li>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus mauris quis
+                                tellus
+                                ultricies eleifend. Proin quis ante non mi convallis commodo. Vivamus id ex sed urna
+                                porta
+                                egestas. Ut tempor varius congue. Maecenas posuere nibh at eros gravida vestibulum.
+                                Vivamus
+                                et congue ligula.</span>
+                            <li>Shark Tank Event</li>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus mauris quis
+                                tellus
+                                ultricies eleifend. Proin quis ante non mi convallis commodo. Vivamus id ex sed urna
+                                porta
+                                egestas. Ut tempor varius congue. Maecenas posuere nibh at eros gravida vestibulum.
+                                Vivamus
+                                et congue ligula.</span>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Submit Idea Modal -->
+    <div class="modal fade modal-xl" id="ideaModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" style="padding-top: 65px;">
+            <div class="container modal-content">
+                <div class="modal-header text-center my-2">
+                    <h1 class="modal-title w-100  fs-5" id="exampleModalLabel">Create New Idea</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body createidea">
+                    <div class="row g-4">
+                        <div class="col-md-6 position-relative">
+                            <div class="custom-select">
+                                <select name="ideacat" id="ideacat" class="ideafield col-md-12">
+                                    <option value="">Select category</option>
+                                    <option value="CE MultiCategory">CE MultiCategory</option>
+                                    <option value="Productivity Ideas">Productivity Ideas</option>
+                                    <option value="Open House Idea">Open House Idea</option>
+                                </select>
+                            </div>
+                            <label class="position-absolute top-0 start-0 ps-4 titlelabel">Idea Category</label>
+                        </div>
+                        <div class="col-md-6 position-relative">
+                            <input type="text" class="ideafield col-md-12" placeholder="Title of request"
+                                name="ideatitle" id="ideatitle">
+                            <label class="position-absolute top-0 start-0 ps-4 titlelabel">Idea Title</label>
+                        </div>
+                        <div class="col-md-6 position-relative">
+                            <textarea name="description" class="form-control col-md-12 ideafield2" id="description"
+                                rows="4"></textarea>
+                            <label class="position-absolute top-0 start-0 ps-4 titlelabel">Idea Description</label>
+                        </div>
+                        <div class="col-md-6 position-relative">
+                            <div class="dropzone dropzone-file-area col-md-12 ideafield2" id="attachtest">
+                                <div class="dz-default dz-message">
+                                    <span class="dz-message-text">Drag and drop file or select</span>
+                                    <span class="dz-message-text mt-2">JPG, JPEG, PNG, or GIF -
+                                        500MB
+                                        file limit <br>Recommended 250x250px or larger</span>
+                                </div>
+                            </div>
+                            <label class="position-absolute top-0 start-0 ps-4 titlelabel">Idea Image</label>
+                        </div>
+                        <div class="col-md-6 position-relative">
+                            <div class="custom-select">
+                                <select name="submitter" id="submitter" class="ideafield col-md-12">
+                                    <option value="">Select Submitter</option>
+                                    <option value="Yourself">Yourself</option>
+                                    <option value="Team">Team</option>
+                                </select>
+                            </div>
+                            <label class="position-absolute top-0 start-0 ps-4 titlelabel">Submitter (s)</label>
+                        </div>
+
+                        <div class="col-md-6 position-relative">
+                            <div class="custom-select">
+                                <select name="objective" id="objective" class="ideafield col-md-12">
+                                    <option value="">Select Objective</option>
+                                    <option value="Increase revenue/value">Increase
+                                        revenue/value
+                                    </option>
+                                    <option value="Reduce cost">Reduce cost</option>
+                                    <option value="Increase customer experience">Increase
+                                        customer experience</option>
+                                    <option value="Technology improvement">Technology
+                                        improvement</option>
+                                </select>
+                            </div>
+                            <label class="position-absolute top-0 start-0 ps-4 titlelabel">Business Objective</label>
+                        </div>
+                        <div class="col-md-6 position-relative">
+                            <div class="custom-select">
+                                <select name="estimated_value" id="estimated_value" class="ideafield col-md-12">
+                                    <option value="">Select value</option>
+                                    <option value="Up to &euro;100k">Up to &euro;100k</option>
+                                    <option value="Up to &euro;500k">Up to &euro;500k</option>
+                                    <option value="Up to &euro;1m">Up to &euro;1m</option>
+                                    <option value="Up to &euro;5m">Up to &euro;5m</option>
+                                    <option value="Over to &euro;5m">Over to &euro;5m</option>
+                                </select>
+                            </div>
+                            <label class="position-absolute top-0 start-0 ps-4 titlelabel">Estimated Value</label>
+                        </div>
+                        <div class="col-md-6 position-relative">
+                            <div class="custom-select">
+                                <select name="function" id="function" class="ideafield col-md-12">
+                                    <option value="" disabled="" selected="">Select Functional
+                                        Area</option>
+                                    <option value="BTV">BTV</option>
+                                    <option value="DI">DI</option>
+                                    <option value="Finance">Finance</option>
+                                    <option value="DBS">DBS</option>
+                                    <option value="LEX">LEX</option>
+                                    <option value="MKT">MKT</option>
+                                    <option value="Ops">Ops</option>
+                                    <option value="SR">SR</option>
+                                    <option value="T&amp;C">T&amp;C</option>
+                                </select>
+                            </div>
+                            <label class="position-absolute top-0 start-0 ps-4 titlelabel">Function</label>
+                        </div>
+                        <div class="col-md-12 position-relative">
+                            <div class="dropzone dropzone-file-area col-md-12 ideafield2" id="attachtest">
+                                <div class="dz-default dz-message">
+                                    <span class="dz-message-text">Drag and drop file or select</span>
+                                </div>
+                            </div>
+                            <label class="position-absolute top-0 start-0 ps-4 titlelabel">Attachment (if
+                                applicable)</label>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-around">
+                        <div>
+                            <button class="btn btn-primary px-5 py-2 mt-5" type="button">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="assets/script.js"></script>
+
+</html>
