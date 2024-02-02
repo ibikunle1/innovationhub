@@ -37,39 +37,51 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/dropzone.js"
         integrity="sha512-9e9rr82F9BPzG81+6UrwWLFj8ZLf59jnuIA/tIf8dEGoQVu7l5qvr02G/BiAabsFOYrIUTMslVN+iDYuszftVQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="assets/ideastyles.css">
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 
 <body>
-    <div class="wrapper otherwrapper">
+
+    <div class="overlay"></div>
+    <!-- Logo section -->
+    <div class="wrapper otherwrapper" id="homewrapper">
         <div class="logo">
             <img src="/assets/logo.svg" alt="BAT logo">
         </div>
-
         <div class="nav__links">
             <ul>
                 <li>
-                    <a href="home.html">Home</a>
+                    <a href="javascript:void(0)" class="viewhero">Home</a>
                 </li>
                 <li>
                     <a href="#ideaModal" data-bs-toggle="modal">Submit an idea</a>
                 </li>
                 <li>
-                    <a href="#" class="viewIdeas activelink">View ideas</a>
+                    <a href="javascript:void(0)" class="viewIdeas activelink">View ideas</a>
                 </li>
                 <li>
-                    <a href="#" class="viewhowitworks">How it works</a>
+                    <a href="javascript:void(0)" class="viewhowitworks">How it works</a>
                 </li>
+                <li class="lang-sm">
+                    <p style="color: black;">Language</p>
+                </li>
+
+                <div class="close-icon">X</div>
             </ul>
         </div>
-
         <div class="lang">
-            <p style="color: white;">Language</p>
+            <p style="color: white;
+            color: white;
+            border: 1px solid #fff;
+            border-radius: 18px;
+            padding: 5px 10px;">Language</p>
         </div>
-
         <div class="menu">
-            MENU
+            <button type="button" class="btn btn-dark"><i class="fa fa-bars pe-2" aria-hidden="true"></i>MENU</button>
         </div>
     </div>
 
