@@ -31,28 +31,6 @@ $('.viewhowitworks').on('click', () => {
     $('.viewhowitworks').addClass('activelink')
 })
 
-const menuBtn = document.querySelector(".menu")
-const navCont = document.querySelector(".nav__links ul")
-const closeIcon = document.querySelector(".close-icon")
-const overlay = document.querySelector(".overlay")
-
-menuBtn.addEventListener("click", () => {
-    // navCont.style.visibility = 'visible'
-    navCont.classList.add('show')
-    overlay.style.visibility = 'visible'
-})
-
-closeIcon.addEventListener("click", () => {
-    // navCont.style.left = '690px'
-    navCont.classList.remove('show')
-    overlay.style.visibility = 'hidden'
-})
-
-overlay.addEventListener("click", () => {
-    navCont.classList.remove('show')
-    overlay.style.visibility = 'hidden'
-})
-
 var x, i, j, l, ll, selElmnt, a, b, c;
 /*look for any elements with the class "custom-select":*/
 x = document.getElementsByClassName("custom-select");

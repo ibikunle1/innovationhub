@@ -88,10 +88,14 @@
         .otherwrapper{
             background-color: #101010;
             position:sticky;
+            padding: 1rem 3rem;
             top: 0;
+            z-index: 99999; 
         }
-        .homewrapper{
-            position: fixed;
+        .homewrapper{            
+            /* position: fixed; */
+            padding: 1rem 3rem;
+            z-index: 99999; 
         }
 
         .wrapper {            
@@ -103,16 +107,16 @@
             color: #FFFFFF;
         }
 
-        .nav__links ul {
-            display: flex;
+        .nav__links {
+            /* display: flex; */
             gap: 4rem;
         }
 
-        .nav__links ul li {
+        .nav__links li {
             list-style: none;
         }
 
-        .nav__links ul li a {
+        .nav__links li a {
             color: white;
             text-decoration: none;
         }
@@ -297,7 +301,7 @@
         }
 
         /* Navigation Responsiveness */
-
+/* 
         .menu {
             display: none;
             color: white;
@@ -323,68 +327,17 @@
             background: rgba(0, 0, 0, .6);
             transition: display 0.5s ease-in-out;
             z-index: 99;
-        }
+        } */
 
-        @media (max-width: 900px) {
-            .lang-sm {
-                display: block;
-                margin-top: auto;
+         @media (max-width: 991px) {
+            .nav__links {  
+                padding: 20px 0px;      
+                gap: 1.4rem;
             }
-
-            .nav__links ul {
-                position: absolute;
-                background-color: #fff;
-                height: 100vh;
-                top: 0;
-                right: 0;
-                display: block;
-                gap: 0;
-                transform: translateX(800px);
-                transition: transform 0.5s ease-in-out;
-                z-index: 9999;
-            }
-
-            .nav__links ul.show {
-                transform: translateX(0px);
-            }
-
-            .nav__links ul li {
-                padding: 1rem 3rem;
-                margin-top: 2rem;
-            }
-
-            .nav__links ul li a {
-                color: #111;
-            }
-
-            .nav__links ul li a {
-                color: #111;
-            }
-
-            .close-icon {
-                display: block;
-                position: absolute;
-                top: 1rem;
-                right: 1rem;
-                font-size: 1.4rem;
-                cursor: pointer;
             }
 
 
-            .lang {
-                display: none;
-            }
-
-            .menu {
-                display: block;
-            }
-        }
-
-
-        @media (max-width: 800px) {
-            .cat_wrapper {
-                grid-template-columns: 1fr;
-            }
+        @media (max-width: 800px) {            
 
             .hero__text .first__text {
                 font-size: 1.4rem;
@@ -399,18 +352,10 @@
                 font-size: .8rem;
             }
 
-            .cat_wrapper {
-                padding: 1rem;
-            }
-
-            .cat__styles {
-                padding: 1.5rem 1.7rem;
-            }
-
             .explore {
                 left: 38.1%;
             }
-        }
+        } 
 
         
         /* How it works Style */

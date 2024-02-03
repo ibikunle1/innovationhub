@@ -28,9 +28,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/fontawesome.min.js"
         integrity="sha512-C8qHv0HOaf4yoA7ISuuCTrsPX8qjolYTZyoFRKNA9dFKnxgzIHnYTOJhXQIt6zwpIFzCrRzUBuVgtC4e5K1nhA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
@@ -45,45 +42,45 @@
 </head>
 
 <body>
-
-    <div class="overlay"></div>
-    <!-- Logo section -->
-    <div class="wrapper otherwrapper" id="homewrapper">
-        <div class="logo">
-            <img src="/assets/logo.svg" alt="BAT logo">
+    <!-- Navigation section -->
+    <nav class="navbar navbar-expand-lg fixed-top otherwrapper" id="homewrapper">
+        <div class="container-fluid">
+            <div class="logo">
+                <a href="/home.html" class="navbar-brand">
+                    <img src="/assets/logo.svg" alt="BAT logo">
+                </a>
+            </div>
+            <button class="btn btn-dark navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="fa fa-bars text-light" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="nav__links navbar-nav me-auto mb-2 ms-auto mb-lg-0">
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="viewhero activelink">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#ideaModal" data-bs-toggle="modal">Submit an idea</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="viewIdeas">View ideas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="viewhowitworks">How it works</a>
+                    </li>
+                </ul>
+                <div class="d-flex lang">
+                    <p style="color: white;
+                    color: white;
+                    border: 1px solid #fff;
+                    border-radius: 18px;
+                    padding: 5px 10px;">Language</p>
+                </div>
+            </div>
         </div>
-        <div class="nav__links">
-            <ul>
-                <li>
-                    <a href="javascript:void(0)" class="viewhero">Home</a>
-                </li>
-                <li>
-                    <a href="#ideaModal" data-bs-toggle="modal">Submit an idea</a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)" class="viewIdeas activelink">View ideas</a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)" class="viewhowitworks">How it works</a>
-                </li>
-                <li class="lang-sm">
-                    <p style="color: black;">Language</p>
-                </li>
-
-                <div class="close-icon">X</div>
-            </ul>
-        </div>
-        <div class="lang">
-            <p style="color: white;
-            color: white;
-            border: 1px solid #fff;
-            border-radius: 18px;
-            padding: 5px 10px;">Language</p>
-        </div>
-        <div class="menu">
-            <button type="button" class="btn btn-dark"><i class="fa fa-bars pe-2" aria-hidden="true"></i>MENU</button>
-        </div>
-    </div>
+    </nav>
 
     <div class="breadcrumb">
         <div class="ideawrapper">
@@ -435,7 +432,7 @@
                     <div class="row g-4">
                         <div class="col-md-6 position-relative">
                             <div class="custom-select">
-                                <select name="ideacat" id="ideacat" class="ideafield col-md-12">
+                                <select name="ideacat" id="ideacat" class="ideafield col-12">
                                     <option value="">Select category</option>
                                     <option value="CE MultiCategory">CE MultiCategory</option>
                                     <option value="Productivity Ideas">Productivity Ideas</option>
@@ -445,17 +442,17 @@
                             <label class="position-absolute top-0 start-0 ps-4 titlelabel">Idea Category</label>
                         </div>
                         <div class="col-md-6 position-relative">
-                            <input type="text" class="ideafield col-md-12" placeholder="Title of request"
-                                name="ideatitle" id="ideatitle">
+                            <input type="text" class="ideafield col-12" placeholder="Title of request" name="ideatitle"
+                                id="ideatitle">
                             <label class="position-absolute top-0 start-0 ps-4 titlelabel">Idea Title</label>
                         </div>
                         <div class="col-md-6 position-relative">
-                            <textarea name="description" class="form-control col-md-12 ideafield2" id="description"
+                            <textarea name="description" class="form-control col-12 ideafield2" id="description"
                                 rows="4"></textarea>
                             <label class="position-absolute top-0 start-0 ps-4 titlelabel">Idea Description</label>
                         </div>
                         <div class="col-md-6 position-relative">
-                            <div class="dropzone dropzone-file-area col-md-12 ideafield2" id="attachtest">
+                            <div class="dropzone dropzone-file-area col-12 ideafield2" id="attachtest">
                                 <div class="dz-default dz-message">
                                     <span class="dz-message-text">Drag and drop file or select</span>
                                     <span class="dz-message-text mt-2">JPG, JPEG, PNG, or GIF -
@@ -467,7 +464,7 @@
                         </div>
                         <div class="col-md-6 position-relative">
                             <div class="custom-select">
-                                <select name="submitter" id="submitter" class="ideafield col-md-12">
+                                <select name="submitter" id="submitter" class="ideafield col-12">
                                     <option value="">Select Submitter</option>
                                     <option value="Yourself">Yourself</option>
                                     <option value="Team">Team</option>
@@ -478,7 +475,7 @@
 
                         <div class="col-md-6 position-relative">
                             <div class="custom-select">
-                                <select name="objective" id="objective" class="ideafield col-md-12">
+                                <select name="objective" id="objective" class="ideafield col-12">
                                     <option value="">Select Objective</option>
                                     <option value="Increase revenue/value">Increase
                                         revenue/value
@@ -494,7 +491,7 @@
                         </div>
                         <div class="col-md-6 position-relative">
                             <div class="custom-select">
-                                <select name="estimated_value" id="estimated_value" class="ideafield col-md-12">
+                                <select name="estimated_value" id="estimated_value" class="ideafield col-12">
                                     <option value="">Select value</option>
                                     <option value="Up to &euro;100k">Up to &euro;100k</option>
                                     <option value="Up to &euro;500k">Up to &euro;500k</option>
@@ -507,7 +504,7 @@
                         </div>
                         <div class="col-md-6 position-relative">
                             <div class="custom-select">
-                                <select name="function" id="function" class="ideafield col-md-12">
+                                <select name="function" id="function" class="ideafield col-12">
                                     <option value="" disabled="" selected="">Select Functional
                                         Area</option>
                                     <option value="BTV">BTV</option>
@@ -524,7 +521,7 @@
                             <label class="position-absolute top-0 start-0 ps-4 titlelabel">Function</label>
                         </div>
                         <div class="col-md-12 position-relative">
-                            <div class="dropzone dropzone-file-area col-md-12 ideafield2" id="attachtest">
+                            <div class="dropzone dropzone-file-area col-12 ideafield2" id="attachtest">
                                 <div class="dz-default dz-message">
                                     <span class="dz-message-text">Drag and drop file or select</span>
                                 </div>
