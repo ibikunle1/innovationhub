@@ -1,36 +1,49 @@
-$('.viewIdeas').on('click', () => {
-    $('#howitwork').addClass('d-none')
-    $('#hero').addClass('d-none')
-    $('#categories').removeClass('d-none')
-    $('#homewrapper').addClass('otherwrapper')
-    $('#homewrapper').removeClass('homewrapper')
-    $('.viewhero').removeClass('activelink')
-    $('.viewIdeas').addClass('activelink')
-    $('.viewhowitworks').removeClass('activelink')
-})
+$(document).ready(function () {
+    // Add click event listener to all view links
+    $('.nav-item a').click(function () {
+        if ($('.navbar-toggler').is(':visible')) {
+            $('.navbar-toggler').click();
+        }
+    });
+    // Check if the click event happened outside of the navbar and the toggler button
+    $(document).click(function (event) {
+        if (!$(event.target).closest('.navbar').length && !$(event.target).hasClass('navbar-toggler')) {
+            $('.navbar-collapse').collapse('hide');
+        }
+    });
 
-$('.viewhero').on('click', () => {
-    $('.viewhero').addClass('activelink')
-    $('.viewIdeas').removeClass('activelink')
-    $('.viewhowitworks').removeClass('activelink')
-    $('#homewrapper').removeClass('otherwrapper')
-    $('#homewrapper').addClass('homewrapper')
-    $('#hero').removeClass('d-none')
-    $('#categories').addClass('d-none')
-    $('#howitwork').addClass('d-none')
-})
-$('.viewhowitworks').on('click', () => {
-    $('#hero').addClass('d-none')
-    $('#howitwork').removeClass('d-none')
-    $('#categories').addClass('d-none')
-    $('#homewrapper').addClass('otherwrapper')
-    $('#homewrapper').removeClass('homewrapper')
 
-    $('.viewhero').removeClass('activelink')
-    $('.viewIdeas').removeClass('activelink')
-    $('.viewhowitworks').addClass('activelink')
-})
-
+    $('.viewIdeas').on('click', () => {
+        $('#howitwork').addClass('d-none')
+        $('#hero').addClass('d-none')
+        $('#categories').removeClass('d-none')
+        $('#homewrapper').addClass('otherwrapper')
+        $('#homewrapper').removeClass('homewrapper')
+        $('.viewhero').removeClass('activelink')
+        $('.viewIdeas').addClass('activelink')
+        $('.viewhowitworks').removeClass('activelink')
+    })
+    $('.viewhero').on('click', () => {
+        $('.viewhero').addClass('activelink')
+        $('.viewIdeas').removeClass('activelink')
+        $('.viewhowitworks').removeClass('activelink')
+        $('#homewrapper').removeClass('otherwrapper')
+        $('#homewrapper').addClass('homewrapper')
+        $('#hero').removeClass('d-none')
+        $('#categories').addClass('d-none')
+        $('#howitwork').addClass('d-none')
+    })
+    $('.viewhowitworks').on('click', () => {
+        $('#hero').addClass('d-none')
+        $('#howitwork').removeClass('d-none')
+        $('#categories').addClass('d-none')
+        $('#homewrapper').addClass('otherwrapper')
+        $('#homewrapper').removeClass('homewrapper')
+        $('.viewhero').removeClass('activelink')
+        $('.viewIdeas').removeClass('activelink')
+        $('.viewhowitworks').addClass('activelink')
+    })
+});
 var x, i, j, l, ll, selElmnt, a, b, c;
 /*look for any elements with the class "custom-select":*/
 x = document.getElementsByClassName("custom-select");
