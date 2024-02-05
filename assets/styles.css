@@ -182,7 +182,7 @@
         .explore {
             position: absolute;
             top: 84%;
-            left: 47.1%;
+            left: 45%;
         }
 
         .explore p {
@@ -194,7 +194,7 @@
 
         .explore__img {
             height: 66px;
-            /* margin-left: 1.4rem; */
+            margin-left: 1.2rem;
             cursor: pointer;
             margin-bottom: 1rem;
         }
