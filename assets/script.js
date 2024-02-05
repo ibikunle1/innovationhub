@@ -1,3 +1,4 @@
+Dropzone.autoDiscover = false;
 $(document).ready(function () {
     // Add click event listener to all view links
     $('.nav-item a').click(function () {
