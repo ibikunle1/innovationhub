@@ -13,12 +13,13 @@ $(document).ready(function () {
     });
 
 
+
     $('.viewIdeas').on('click', () => {
+
         $('#howitwork').addClass('d-none')
         $('#hero').addClass('d-none')
         $('#categories').removeClass('d-none')
-        $('#homewrapper').addClass('otherwrapper')
-        $('#homewrapper').removeClass('homewrapper')
+        $('#homewrapper').addClass('otherwrapper').removeClass('homewrapper')
         $('.viewhero').removeClass('activelink')
         $('.viewIdeas').addClass('activelink')
         $('.viewhowitworks').removeClass('activelink')
@@ -27,8 +28,7 @@ $(document).ready(function () {
         $('.viewhero').addClass('activelink')
         $('.viewIdeas').removeClass('activelink')
         $('.viewhowitworks').removeClass('activelink')
-        $('#homewrapper').removeClass('otherwrapper')
-        $('#homewrapper').addClass('homewrapper')
+        $('#homewrapper').removeClass('otherwrapper').addClass('homewrapper')
         $('#hero').removeClass('d-none')
         $('#categories').addClass('d-none')
         $('#howitwork').addClass('d-none')
@@ -37,8 +37,7 @@ $(document).ready(function () {
         $('#hero').addClass('d-none')
         $('#howitwork').removeClass('d-none')
         $('#categories').addClass('d-none')
-        $('#homewrapper').addClass('otherwrapper')
-        $('#homewrapper').removeClass('homewrapper')
+        $('#homewrapper').addClass('otherwrapper').removeClass('homewrapper')
         $('.viewhero').removeClass('activelink')
         $('.viewIdeas').removeClass('activelink')
         $('.viewhowitworks').addClass('activelink')

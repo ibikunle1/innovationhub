@@ -83,18 +83,18 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1rem 3rem;
+            padding: 1rem 2rem;
         }
         .otherwrapper{
             background-color: #101010;
             position:sticky;
-            padding: 1rem 3rem;
+            padding: 1rem 2rem;
             top: 0;
             z-index: 99999; 
         }
         .homewrapper{            
             /* position: fixed; */
-            padding: 1rem 3rem;
+            padding: 1rem 2rem;
             z-index: 99999; 
         }
 
@@ -334,7 +334,28 @@
                 padding: 20px 0px;      
                 gap: 1.4rem;
             }
-            }
+
+            
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0rem;
+        }
+        .otherwrapper{
+            background-color: #101010;
+            position:sticky;
+            padding: 1rem 0rem;
+            top: 0;
+            z-index: 99999; 
+        }
+        .homewrapper{            
+            /* position: fixed; */
+            padding: 1rem 0rem;
+            z-index: 99999; 
+        }
+
+        }
 
 
         @media (max-width: 800px) {            
@@ -418,5 +439,11 @@
             font-weight: 10px;
             line-height: 20px;
         }
+
+
+
+        /* Animation Begins here */        
+        
+
         
         
