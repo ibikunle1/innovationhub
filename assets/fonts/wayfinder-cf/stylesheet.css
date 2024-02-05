@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Wayfinder CF';
+    src: url('WayfinderCF-Regular.eot');
+    src: local('Wayfinder CF Regular'), local('WayfinderCF-Regular'),
+        url('WayfinderCF-Regular.eot?#iefix') format('embedded-opentype'),
+        url('WayfinderCF-Regular.woff2') format('woff2'),
+        url('WayfinderCF-Regular.woff') format('woff'),
+        url('WayfinderCF-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Wayfinder CF';
+    src: url('WayfinderCF-Thin.eot');
+    src: local('Wayfinder CF Thin'), local('WayfinderCF-Thin'),
+        url('WayfinderCF-Thin.eot?#iefix') format('embedded-opentype'),
+        url('WayfinderCF-Thin.woff2') format('woff2'),
+        url('WayfinderCF-Thin.woff') format('woff'),
+        url('WayfinderCF-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Wayfinder CF';
+    src: url('WayfinderCF-Heavy.eot');
+    src: local('Wayfinder CF Heavy'), local('WayfinderCF-Heavy'),
+        url('WayfinderCF-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('WayfinderCF-Heavy.woff2') format('woff2'),
+        url('WayfinderCF-Heavy.woff') format('woff'),
+        url('WayfinderCF-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Wayfinder CF';
+    src: url('WayfinderCF-Light.eot');
+    src: local('Wayfinder CF Light'), local('WayfinderCF-Light'),
+        url('WayfinderCF-Light.eot?#iefix') format('embedded-opentype'),
+        url('WayfinderCF-Light.woff2') format('woff2'),
+        url('WayfinderCF-Light.woff') format('woff'),
+        url('WayfinderCF-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Wayfinder CF';
+    src: url('WayfinderCF-Bold.eot');
+    src: local('Wayfinder CF Bold'), local('WayfinderCF-Bold'),
+        url('WayfinderCF-Bold.eot?#iefix') format('embedded-opentype'),
+        url('WayfinderCF-Bold.woff2') format('woff2'),
+        url('WayfinderCF-Bold.woff') format('woff'),
+        url('WayfinderCF-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Wayfinder CF Demi';
+    src: url('WayfinderCF-DemiBold.eot');
+    src: local('Wayfinder CF Demi Bold'), local('WayfinderCF-DemiBold'),
+        url('WayfinderCF-DemiBold.eot?#iefix') format('embedded-opentype'),
+        url('WayfinderCF-DemiBold.woff2') format('woff2'),
+        url('WayfinderCF-DemiBold.woff') format('woff'),
+        url('WayfinderCF-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Wayfinder CF Extra';
+    src: url('WayfinderCF-ExtraBold.eot');
+    src: local('Wayfinder CF Extra Bold'), local('WayfinderCF-ExtraBold'),
+        url('WayfinderCF-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('WayfinderCF-ExtraBold.woff2') format('woff2'),
+        url('WayfinderCF-ExtraBold.woff') format('woff'),
+        url('WayfinderCF-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
