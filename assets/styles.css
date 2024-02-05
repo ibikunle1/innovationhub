@@ -167,7 +167,7 @@
             font-size: 1.9rem;
         }
 
-        .hero__text h1 {
+        .bright_idea div {
             font-family: 'Wayfinder CF', sans-serif !important;
             font-size: 10rem;
             line-height: 130px;
@@ -405,7 +405,7 @@
                 font-size: 1.4rem;
             }
 
-            .hero__text h1 {
+            .bright_idea {
                 font-size: 6rem;
                 line-height: 95px;
             }
