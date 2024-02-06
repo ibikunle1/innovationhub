@@ -504,7 +504,8 @@
         }
                
 
-        .cat_container {
+        .cat_container,
+        .howitwork {
             opacity: 0; 
             animation: slideInUp 0.9s ease-in-out forwards;
         }               
