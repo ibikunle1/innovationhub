@@ -13,10 +13,7 @@ $(document).ready(function () {
         }
     });
 
-
-
     $('.viewIdeas').on('click', () => {
-
         $('#howitwork').addClass('d-none')
         $('#hero').addClass('d-none')
         $('#categories').removeClass('d-none')
@@ -26,6 +23,7 @@ $(document).ready(function () {
         $('.viewhowitworks').removeClass('activelink')
     })
     $('.viewhero').on('click', () => {
+        $('#hero').addClass('hero_animate')
         $('.viewhero').addClass('activelink')
         $('.viewIdeas').removeClass('activelink')
         $('.viewhowitworks').removeClass('activelink')

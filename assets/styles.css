@@ -58,7 +58,7 @@
             background-size: cover;
             height: 100vh;
             position: relative;
-            overflow-y: hidden;
+            overflow-y: hidden;            
             /* z-index: 1; */
         }
 
@@ -89,12 +89,23 @@
             background-image: url('/assets/line.png');
             background-position: center;
             background-repeat: no-repeat;
-            background-size: cover;
-            /* width: 20px; */
+            background-size: cover;            
+            animation: slideInSide 0.7s ease-in-out forwards;            
+        }
+        @keyframes slideInSide {
+            from {
+                transform: translate3d(-100%, 0, 0);
+                opacity: 0; 
+            }
+        
+            to {
+                transform: translate3d(0, 0, 0);
+                opacity: 1; 
+            }
         }
         
         .activelink::before {
-            top: 0;
+            top: 0;            
         }
         
         .activelink::after {
@@ -160,7 +171,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
-            color: white;
+            color: white;            
         }
 
         .hero__text .first__text {
@@ -301,8 +312,8 @@
         }
 
         .ce_multi article {
-            line-height: 25px;
-            padding-bottom: 2rem;
+            line-height: 27px;
+            padding-bottom: 5rem;
         }
         .btndesign {
             position: absolute;
@@ -327,8 +338,8 @@
         }
 
         .prod article {
-            line-height: 25px;
-            padding-bottom: 2rem;
+            line-height: 27px;
+            padding-bottom: 5rem;
         }
 
         .o_house h3 {
@@ -337,8 +348,8 @@
         }
 
         .o_house article {
-            line-height: 25px;
-            padding-bottom: 2rem;
+            line-height: 27px;
+            padding-bottom: 5rem;
         }
 
         /* Navigation Responsiveness */
@@ -484,7 +495,46 @@
 
 
 
-        /* Animation Begins here */        
+        /* Animation Begins here */          
+
+        .hero_animate {
+            opacity: 0;            
+            /* animation: slideInDown 0.3s ease-in-out 0.1s forwards; */
+            animation: slideInDown 0.9s ease-in-out forwards;
+        }
+               
+
+        .cat_container {
+            opacity: 0; 
+            animation: slideInUp 0.9s ease-in-out forwards;
+        }               
+        
+        @keyframes slideInUp {
+            from {
+                transform: translate3d(0, 100%, 0);
+                opacity: 0; 
+            }
+        
+            to {
+                transform: translate3d(0, 0, 0);
+                opacity: 1; 
+            }
+        }
+        
+        @keyframes slideInDown {
+            from {
+                transform: translate3d(0, -100%, 0);
+                opacity: 0; 
+            }
+        
+            to {
+                transform: translate3d(0, 0, 0);
+                opacity: 1; 
+            }
+        }
+        
+
+
         
 
         
